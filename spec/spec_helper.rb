@@ -3,8 +3,9 @@ require("pg")
 require("pry")
 require("list")
 require("task")
+require("capybara")
 
-DB = PG.connect({:dbname => "to_do_test"})
+DB = PG.connect({:dbname => "to_do"})
 
 RSpec.configure do |config|
   config.after(:each) do

@@ -5,10 +5,11 @@ describe(List) do
     it("starts off with no lists") do
       expect(List.all()).to(eq([]))
     end
+  end
 
   describe("#name") do
     it("tells you its name") do
-      list = List.new({:name => "Epicodus stuff", id => nil})
+      list = List.new({:name => "Epicodus stuff", :id => nil})
       expect(list.name()).to(eq("Epicodus stuff"))
     end
   end

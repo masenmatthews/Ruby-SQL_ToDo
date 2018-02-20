@@ -6,14 +6,14 @@ require("./lib/list")
 require("pg")
 require('capybara')
 
-DB = PG.connect({:dbname => "to_do_test"})
+DB = PG.connect({:dbname => "to_do"})
 
 get('/') do
   erb(:index)
 end
 
 get("/lists/new") do
-  erb(:list_form)
+  erb(:index)
 end
 
 post("/lists") do
